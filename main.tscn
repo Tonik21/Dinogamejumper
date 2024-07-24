@@ -22,4 +22,4 @@ texture = ExtResource("2_wp3bc")
 shape = SubResource("RectangleShape2D_mji73")
 
 [node name="Node2D" parent="." instance=ExtResource("3_pljre")]
-position = Vector2(82, 65)
+position = Vector2(-50, 72)

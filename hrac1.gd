@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const BASE_JUMP_VELOCITY = -400.0
-const MAX_JUMP_VELOCITY = -800.0  # 2x silnější než BASE_JUMP_VELOCITY
+const MAX_JUMP_VELOCITY = -8000.0  # 2x silnější než BASE_JUMP_VELOCITY
 var GRAVITY = 980
 var isClimbing = false
 
@@ -59,7 +59,7 @@ func execute_jump():
 	charge_time = 0.0
 
 func game_over():
-
+	
 	# Zde můžete přidat logiku pro restart hry nebo návrat do menu
 
 	# Volitelně: Přidejte vizuální indikátor nabíjení skoku

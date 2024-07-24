@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dr512ve358v08"]
+[gd_scene load_steps=9 format=3 uid="uid://dr512ve358v08"]
 
-[ext_resource type="PackedScene" uid="uid://bya4r6h85wap0" path="res://hrac.tscn" id="1_yitcv"]
+[ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_yitcv"]
 [ext_resource type="PackedScene" uid="uid://dpso8k0lubtsl" path="res://platform.tscn" id="3_pljre"]
+[ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_o1jfu"]
+[ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="4_ox8kb"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="4_vcib2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8df8t"]
@@ -583,9 +585,17 @@ texture = ExtResource("4_vcib2")
 19:7/0/physics_layer_0/angular_velocity = 0.0
 19:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efvls"]
+resource_name = "liijana"
+texture = ExtResource("4_ox8kb")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
 [sub_resource type="TileSet" id="TileSet_fwspn"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_8df8t")
+sources/1 = SubResource("TileSetAtlasSource_efvls")
 
 [node name="main" type="Node2D"]
 position = Vector2(441, 381)
@@ -599,4 +609,8 @@ position = Vector2(-112, 48)
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_fwspn")
 format = 2
-layer_0/tile_data = PackedInt32Array(131087, 65536, 0, 131088, 65536, 0, 131089, 65536, 0, 131090, 65536, 0, 131091, 65536, 0, 131092, 65536, 0, 131093, 65536, 0, 23, 131072, 0, 24, 131072, 0, 25, 131072, 0, 26, 131072, 0, 27, 131072, 0, 28, 131072, 0, 29, 131072, 0, 65544, 196608, 0, 65545, 196608, 0, 65546, 196608, 0, 65547, 196608, 0, 65548, 196608, 0, 65549, 196608, 0, 65550, 196608, 0)
+layer_0/tile_data = PackedInt32Array(131087, 65536, 0, 131088, 65536, 0, 131089, 65536, 0, 131090, 65536, 0, 131091, 65536, 0, 131092, 65536, 0, 131093, 65536, 0, 23, 131072, 0, 24, 131072, 0, 25, 131072, 0, 26, 131072, 0, 27, 131072, 0, 28, 131072, 0, 29, 131072, 0, 65544, 196608, 0, 65545, 196608, 0, 65546, 196608, 0, 65547, 196608, 0, 65548, 196608, 0, 65549, 196608, 0, 65550, 196608, 0, 65555, 1, 0, 19, 1, 0, -65517, 1, 0, -131053, 1, 0, -196589, 1, 0, -262125, 1, 0, -327661, 1, 0, -393197, 1, 0, -393200, 655360, 0, -393201, 655360, 0, -393202, 655360, 0, -393203, 655360, 0, -327664, 196608, 1, -327665, 196608, 1, -327666, 196608, 1, -327667, 196608, 1)
+
+[node name="Area2D" parent="." instance=ExtResource("4_o1jfu")]
+position = Vector2(624, -61)
+scale = Vector2(1.92505, 13.1373)

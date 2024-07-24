@@ -9,7 +9,6 @@ size = Vector2(137, 34)
 radius = 28.0022
 height = 138.014
 
-
 [node name="Node2D" type="StaticBody2D"]
 position = Vector2(-1, 0)
 

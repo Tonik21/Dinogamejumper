@@ -3,20 +3,24 @@ extends CharacterBody2D
 const SPEED = 300.0
 const BASE_JUMP_VELOCITY = -400.0
 const MAX_JUMP_VELOCITY = -800.0  # 2x silnější než BASE_JUMP_VELOCITY
-const GRAVITY = 980
+var GRAVITY = 980
+var isClimbing = false
 
 var time_left = 60  # 60 sekund na dosažení cíle
 var is_charging_jump = false
 var charge_time = 0.0
 const MAX_CHARGE_TIME = 1.0  # Maximální čas nabíjení skoku
 
+func is_on_floor_custom():
+	return is_on_floor() or isClimbing
+
 func _physics_process(delta):
 	# Přidání gravitace
-	if not is_on_floor():
+	if not is_on_floor_custom():
 		velocity.y += GRAVITY * delta
 
 	# Ovládání skoku
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor_custom():
 		start_charge_jump()
 	elif Input.is_action_pressed("jump") and is_charging_jump:
 		continue_charge_jump(delta)

@@ -1,6 +1,6 @@
 extends Area2D
 
-var climb_speed = 1000
+var climb_speed = 100
 var player = null
 
 func _physics_process(delta):
@@ -11,9 +11,11 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):
-		print(body)
 		player = body
+		player.isClimbing = true
+		player.velocity.y = 0
 
 func _on_body_exited(body):
 	if body == player:
+		player.isClimbing = false
 		player = null

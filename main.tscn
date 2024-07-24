@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_o1jfu"]
 [ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="4_ox8kb"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="4_vcib2"]
-[ext_resource type="PackedScene" uid="uid://ykh2ccedq31w" path="res://paralax_bckgrnd.tscn" id="5_7x3pq"]
+[ext_resource type="PackedScene" path="res://paralax_bckgrnd.tscn" id="5_7x3pq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8df8t"]
 texture = ExtResource("4_vcib2")

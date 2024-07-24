@@ -28,7 +28,6 @@ script = ExtResource("1_1ml1f")
 position = Vector2(9.25, -13.25)
 shape = SubResource("RectangleShape2D_mji73")
 
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(9.5, -13)
 scale = Vector2(0.119926, 0.158038)

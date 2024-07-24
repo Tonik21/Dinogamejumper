@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6mm0mxlkbg2x"]
+
+[ext_resource type="Script" path="res://liána.gd" id="1_5eedb"]
+[ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="2_56p03"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5y2j"]
+size = Vector2(547, 612)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(2, -2)
+script = ExtResource("1_5eedb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_56p03")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 0)
+shape = SubResource("RectangleShape2D_u5y2j")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -571,19 +571,19 @@ texture = ExtResource("4_vcib2")
 16:7/0 = 0
 16:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 16:7/0/physics_layer_0/angular_velocity = 0.0
-16:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 2.625, -8, 3.375, -8, 4.75)
 17:7/0 = 0
 17:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 17:7/0/physics_layer_0/angular_velocity = 0.0
-17:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 2.625, -8, 3.375, -8, 4.75)
 18:7/0 = 0
 18:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 18:7/0/physics_layer_0/angular_velocity = 0.0
-18:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 2.625, -8, 3.375, -8, 4.75)
 19:7/0 = 0
 19:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 19:7/0/physics_layer_0/angular_velocity = 0.0
-19:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 5.375, -8, 5.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efvls"]
 resource_name = "liijana"
@@ -601,33 +601,17 @@ sources/1 = SubResource("TileSetAtlasSource_efvls")
 position = Vector2(441, 381)
 
 [node name="hrac" parent="." instance=ExtResource("1_yitcv")]
-position = Vector2(-9, -55)
+position = Vector2(134, -117)
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(157, -11)
+position = Vector2(13, 6)
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_fwspn")
 format = 2
-layer_0/tile_data = PackedInt32Array(65534, 1179648, 6, 65535, 1179648, 6, 0, 1179648, 6, 1, 1179648, 6, -65532, 131072, 0, -65531, 131072, 0, -65530, 131072, 0, 131071, 131072, 1, 65536, 131072, 1, 5, 131072, 1, 131070, 131072, 1, 196607, 131072, 1, 131072, 131072, 1, -4, 1, 0, 65532, 1, 0, 196604, 1, 0, 131068, 1, 0, 2, 1, 0, 196609, 1, 0, -65529, 1, 0, 65537, 196608, 1, 65538, 1, 0, 131073, 1, 0, 131074, 1, 0, 196610, 1, 0, -7, 0, 0, -6, 0, 0, -5, 0, 0, -458743, 0, 0, -458742, 0, 0, -458739, 0, 0, -11, 0, 0, -12, 0, 0, -13, 0, 0, -14, 0, 0, 458744, 0, 0, 458745, 0, 0, 458746, 0, 0, 458747, 0, 0, 458748, 0, 0, 458749, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 262155, 0, 0, 262156, 0, 0, 327691, 131072, 1, 327692, 131072, 1, 393227, 131072, 2, 393226, 131072, 2, 327690, 131072, 1, 262154, 196608, 0, 262153, 196608, 0, 327689, 131072, 1, 524281, 131072, 1, 524282, 131072, 1, 524283, 131072, 1, 524284, 131072, 1, 589818, 131072, 2, 589819, 131072, 2)
-
-[node name="Area2D" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(-240, 65)
-scale = Vector2(1.68505, 9.6973)
+layer_0/tile_data = PackedInt32Array(196604, 1, 0, 458754, 0, 0, 458755, 131072, 0, 458756, 131072, 0, 458757, 131072, 0, 458758, 327680, 0, 65535, 1179648, 6, 131071, 131072, 1, 65534, 1179648, 6, 131070, 131072, 1, 196607, 1114112, 7, 0, 1179648, 6, 65536, 196608, 1, 1, 327680, 0, 65533, 0, 0, 65532, 1, 0, 131068, 1, 0, 262140, 1, 0, -4, 1, 0, -393210, 131072, 2, -196602, 131072, 0, -458740, 65536, 0, -458742, 0, 0, -458741, 65536, 0, -393205, 131072, 1, -393204, 131072, 1, -327668, 131072, 2, -458739, 65536, 0, -393203, 131072, 1, -458738, 327680, 0, -458746, 196608, 1, -524282, 196608, 0, -524283, 0, 0, -524281, 327680, 0, -458747, 0, 1, -458745, 327680, 1)
 
 [node name="Area2D2" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(-111, 33)
+position = Vector2(-99, 72)
 scale = Vector2(-1.52626, 6.51549)
-
-[node name="Area2D3" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(81, 50)
-scale = Vector2(1.56505, 5.0573)
-
-[node name="Area2D4" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(50, 113)
-scale = Vector2(1.56505, 5.0573)
-
-[node name="Area2D5" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(241, -17)
-scale = Vector2(1.56505, 1.5373)
 
 [node name="paralax bckgrnd" parent="." instance=ExtResource("5_7x3pq")]

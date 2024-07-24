@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const BASE_JUMP_VELOCITY = -400.0
-const MAX_JUMP_VELOCITY = -800.0  # 2x silnější než BASE_JUMP_VELOCITY
+const MAX_JUMP_VELOCITY = -600.0  # 2x silnější než BASE_JUMP_VELOCITY
 var GRAVITY = 980
 var isClimbing = false
 
@@ -15,6 +15,10 @@ func is_on_floor_custom():
 	return is_on_floor() or isClimbing
 
 func _physics_process(delta):
+	# Volitelně: Přidejte vizuální indikátor nabíjení skoku
+	if is_charging_jump:
+		var charge_percentage = (charge_time / MAX_CHARGE_TIME) * 100
+		$"CanvasLayer/ProgressBar".value  = (int(charge_percentage))  
 	# Přidání gravitace
 	if not is_on_floor_custom():
 		velocity.y += GRAVITY * delta
@@ -42,7 +46,8 @@ func _physics_process(delta):
 	# Aktualizace zbývajícího času
 	time_left -= delta
 	if time_left <= 0:
-		game_over()
+		#game_over()
+		get_tree().quit()
 
 func start_charge_jump():
 	is_charging_jump = true
@@ -58,11 +63,3 @@ func execute_jump():
 	is_charging_jump = false
 	charge_time = 0.0
 
-func game_over():
-
-	# Zde můžete přidat logiku pro restart hry nebo návrat do menu
-
-	# Volitelně: Přidejte vizuální indikátor nabíjení skoku
-	if is_charging_jump:
-		var charge_percentage = (charge_time / MAX_CHARGE_TIME) * 100
-		$"../CanvasLayer/Label".text += "\nNabíjení skoku: " + str(int(charge_percentage)) + "%"

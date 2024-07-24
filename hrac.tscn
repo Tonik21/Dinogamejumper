@@ -34,3 +34,16 @@ scale = Vector2(0.121771, 0.158038)
 sprite_frames = SubResource("SpriteFrames_xmpgg")
 animation = &"run"
 frame_progress = 0.135346
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = -0.0416667
+offset_left = 768.0
+offset_top = 524.0
+offset_right = 915.0
+offset_bottom = 551.0
+rotation = 4.69905
+show_percentage = false
+metadata/_edit_use_anchors_ = true

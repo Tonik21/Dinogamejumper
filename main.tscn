@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://dr512ve358v08"]
+[gd_scene load_steps=8 format=3 uid="uid://dr512ve358v08"]
 
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_yitcv"]
-[ext_resource type="PackedScene" uid="uid://dpso8k0lubtsl" path="res://platform.tscn" id="3_pljre"]
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_o1jfu"]
 [ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="4_ox8kb"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="4_vcib2"]
@@ -601,16 +600,30 @@ sources/1 = SubResource("TileSetAtlasSource_efvls")
 position = Vector2(441, 381)
 
 [node name="hrac" parent="." instance=ExtResource("1_yitcv")]
-
-[node name="Node2D" parent="." instance=ExtResource("3_pljre")]
-position = Vector2(-112, 48)
+position = Vector2(-9, -55)
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_fwspn")
 format = 2
-layer_0/tile_data = PackedInt32Array(131087, 65536, 0, 131088, 65536, 0, 131089, 65536, 0, 131090, 65536, 0, 131091, 65536, 0, 131092, 65536, 0, 131093, 65536, 0, 23, 131072, 0, 24, 131072, 0, 25, 131072, 0, 26, 131072, 0, 27, 131072, 0, 28, 131072, 0, 29, 131072, 0, 65544, 196608, 0, 65545, 196608, 0, 65546, 196608, 0, 65547, 196608, 0, 65548, 196608, 0, 65549, 196608, 0, 65550, 196608, 0, 65555, 1, 0, 19, 1, 0, -65517, 1, 0, -131053, 1, 0, -196589, 1, 0, -262125, 1, 0, -327661, 1, 0, -393197, 1, 0, -393200, 655360, 0, -393201, 655360, 0, -393202, 655360, 0, -393203, 655360, 0, -327664, 196608, 1, -327665, 196608, 1, -327666, 196608, 1, -327667, 196608, 1)
+layer_0/tile_data = PackedInt32Array(65534, 1179648, 6, 65535, 1179648, 6, 0, 1179648, 6, 1, 1179648, 6, -7, 131072, 0, -6, 131072, 0, -5, 131072, 0, -65532, 131072, 0, -65531, 131072, 0, -65530, 131072, 0, 65530, 131072, 1, 131071, 131072, 1, 65536, 131072, 1, 5, 131072, 1, 65537, 131072, 1, 131070, 131072, 1, 196607, 131072, 1, 131072, 131072, 1, -4, 1, 0, 65532, 1, 0, 196604, 1, 0, 131068, 1, 0, 65538, 1, 0, 2, 1, 0, 131073, 1, 0, 131074, 1, 0, 196609, 1, 0, 262145, 1, 0, -65529, 1, 0, 65528, 1, 0, 131064, 1, 0, 196600, 1, 0, 262136, 1, 0, 327672, 1, 0, -8, 1, 0, 393204, 131072, 0, 458741, 131072, 0, 458742, 131072, 0, 458744, 131072, 0, 458743, 131072, 0, 524281, 131072, 0, 524283, 131072, 0, 524282, 131072, 0, 458750, 131072, 0, 393217, 131072, 0, 393220, 131072, 0, 393219, 131072, 0, 458754, 131072, 0, 327686, 131072, 0, 262152, 131072, 0, 131081, 131072, 0)
 
 [node name="Area2D" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(624, -61)
-scale = Vector2(1.92505, 13.1373)
+position = Vector2(-240, 65)
+scale = Vector2(1.68505, 9.6973)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_o1jfu")]
+position = Vector2(-111, 33)
+scale = Vector2(-1.52626, 6.51549)
+
+[node name="Area2D3" parent="." instance=ExtResource("4_o1jfu")]
+position = Vector2(81, 50)
+scale = Vector2(1.56505, 5.0573)
+
+[node name="Area2D4" parent="." instance=ExtResource("4_o1jfu")]
+position = Vector2(50, 113)
+scale = Vector2(1.56505, 5.0573)
+
+[node name="Area2D5" parent="." instance=ExtResource("4_o1jfu")]
+position = Vector2(241, -17)
+scale = Vector2(1.56505, 1.5373)

@@ -602,9 +602,6 @@ position = Vector2(441, 381)
 
 [node name="hrac" parent="." instance=ExtResource("1_yitcv")]
 
-[node name="Node2D" parent="." instance=ExtResource("3_pljre")]
-position = Vector2(-112, 48)
-
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_fwspn")
@@ -614,3 +611,6 @@ layer_0/tile_data = PackedInt32Array(131087, 65536, 0, 131088, 65536, 0, 131089,
 [node name="Area2D" parent="." instance=ExtResource("4_o1jfu")]
 position = Vector2(624, -61)
 scale = Vector2(1.92505, 13.1373)
+
+[node name="Node2D" parent="." instance=ExtResource("3_pljre")]
+position = Vector2(-79, 69)

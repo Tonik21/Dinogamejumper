@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dnuxktky612dy" path="res://player/pxArt.png" id="3_6hdcx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mji73"]
-size = Vector2(65.5, 58.5)
+size = Vector2(39, 58.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xmpgg"]
 animations = [{
@@ -25,12 +25,12 @@ animations = [{
 script = ExtResource("1_1ml1f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9.25, -13.25)
+position = Vector2(87, -1)
 shape = SubResource("RectangleShape2D_mji73")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(9.5, -13)
-scale = Vector2(0.119926, 0.158038)
+position = Vector2(92, 3.8147e-06)
+scale = Vector2(0.121771, 0.158038)
 sprite_frames = SubResource("SpriteFrames_xmpgg")
 animation = &"run"
 frame_progress = 0.135346

@@ -5,7 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://dnuxktky612dy" path="res://player/pxArt.png" id="3_6hdcx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mji73"]
+
 size = Vector2(23, 43)
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xmpgg"]
 animations = [{
@@ -25,12 +27,26 @@ animations = [{
 script = ExtResource("1_1ml1f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(11.5, -7.5)
+position = Vector2(87, -1)
+
 shape = SubResource("RectangleShape2D_mji73")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(9.5, -13)
-scale = Vector2(0.119926, 0.158038)
+position = Vector2(92, 3.8147e-06)
+scale = Vector2(0.121771, 0.158038)
 sprite_frames = SubResource("SpriteFrames_xmpgg")
 animation = &"run"
-frame_progress = 0.161159
+frame_progress = 0.135346
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = -0.0416667
+offset_left = 768.0
+offset_top = 524.0
+offset_right = 915.0
+offset_bottom = 551.0
+rotation = 4.69905
+show_percentage = false
+metadata/_edit_use_anchors_ = true

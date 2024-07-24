@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://cuq115nu3qtiy"]
+[gd_scene load_steps=2 format=3 uid="uid://cuq115nu3qtiy"]
 
-[node name="ledo" type="StaticBody2D"]
+[sub_resource type="TileSet" id="TileSet_bfa41"]
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_bfa41")
+format = 2

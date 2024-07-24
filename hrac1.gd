@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const BASE_JUMP_VELOCITY = -400.0
 const MAX_JUMP_VELOCITY = -600.0  # 2x silnější než BASE_JUMP_VELOCITY
+
 var GRAVITY = 980
 var isClimbing = false
 
@@ -62,4 +63,3 @@ func execute_jump():
 	velocity.y = jump_power
 	is_charging_jump = false
 	charge_time = 0.0
-

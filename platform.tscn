@@ -6,8 +6,8 @@
 size = Vector2(137, 34)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_teir4"]
-radius = 39.104
-height = 347.981
+radius = 26.9976
+height = 124.004
 
 [node name="Node2D" type="StaticBody2D"]
 position = Vector2(-1, 0)
@@ -49,11 +49,11 @@ scale = Vector2(1.07031, 0.257813)
 texture = ExtResource("1_nepl7")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-position = Vector2(392, -82)
+position = Vector2(134, -317)
 shape = SubResource("RectangleShape2D_q0nxq")
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(395, -80)
+position = Vector2(133, -315)
 scale = Vector2(1.07031, 0.257813)
 texture = ExtResource("1_nepl7")
 
@@ -63,6 +63,6 @@ rotation = 1.56848
 shape = SubResource("CapsuleShape2D_teir4")
 
 [node name="Sprite2D6" type="Sprite2D" parent="."]
-position = Vector2(-43, -160.5)
-scale = Vector2(1.07031, 0.445313)
+position = Vector2(-40.7501, -160)
+scale = Vector2(1.03516, 0.4375)
 texture = ExtResource("1_nepl7")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://iw2rleqrk0v8"
+path="res://.godot/imported/Jurassic Jump.mp3-343ed7fa3c7959579bcdc648cf591441.mp3str"
+
+[deps]
+
+source_file="res://Jurassic Jump.mp3"
+dest_files=["res://.godot/imported/Jurassic Jump.mp3-343ed7fa3c7959579bcdc648cf591441.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

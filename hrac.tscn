@@ -18,7 +18,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 4.0
+"speed": 7.0
 }]
 
 [node name="hrac" type="CharacterBody2D" groups=["player"]]
@@ -33,7 +33,8 @@ position = Vector2(9.5, -13)
 scale = Vector2(0.119926, 0.158038)
 sprite_frames = SubResource("SpriteFrames_xmpgg")
 animation = &"run"
-frame_progress = 0.161159
+frame = 1
+frame_progress = 0.795881
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

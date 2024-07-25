@@ -601,7 +601,7 @@ sources/1 = SubResource("TileSetAtlasSource_efvls")
 position = Vector2(441, 381)
 
 [node name="hrac" parent="." instance=ExtResource("1_yitcv")]
-position = Vector2(134, -117)
+position = Vector2(162, 203)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(13, 6)
@@ -611,7 +611,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(196604, 1, 0, 458754, 0, 0, 458755, 131072, 0, 458756, 131072, 0, 458757, 131072, 0, 458758, 327680, 0, 65535, 1179648, 6, 131071, 131072, 1, 65534, 1179648, 6, 131070, 131072, 1, 196607, 1114112, 7, 0, 1179648, 6, 65536, 196608, 1, 1, 327680, 0, 65533, 0, 0, 65532, 1, 0, 131068, 1, 0, 262140, 1, 0, -4, 1, 0, -393210, 131072, 2, -196602, 131072, 0, -458740, 65536, 0, -458742, 0, 0, -458741, 65536, 0, -393205, 131072, 1, -393204, 131072, 1, -327668, 131072, 2, -458739, 65536, 0, -393203, 131072, 1, -458738, 327680, 0, -458746, 196608, 1, -524282, 196608, 0, -524283, 0, 0, -524281, 327680, 0, -458747, 0, 1, -458745, 327680, 1)
 
 [node name="Area2D2" parent="." instance=ExtResource("4_o1jfu")]
-position = Vector2(-99, 72)
-scale = Vector2(-1.52626, 6.51549)
+position = Vector2(-99, 55)
+scale = Vector2(-1.52626, 7.87549)
 
 [node name="paralax bckgrnd" parent="." instance=ExtResource("5_7x3pq")]

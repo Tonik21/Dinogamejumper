@@ -39,5 +39,8 @@ frame_progress = 0.795881
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_right = 157.0
-offset_bottom = 27.0
+offset_top = 720.0
+offset_right = 719.0
+offset_bottom = 747.0
+rotation = -1.56963
+show_percentage = false

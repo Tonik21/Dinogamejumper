@@ -101,6 +101,7 @@ func continue_charge_jump(delta):
 	charge_time = min(charge_time, MAX_CHARGE_TIME)
 
 func execute_jump():
+	$CanvasLayer/ProgressBar.value = 0
 	var jump_power = lerp(BASE_JUMP_VELOCITY, MAX_JUMP_VELOCITY, charge_time / MAX_CHARGE_TIME)
 	velocity.y = jump_power
 	is_charging_jump = false

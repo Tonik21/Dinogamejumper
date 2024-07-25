@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dxn1yca2a1lle"]
+[gd_scene load_steps=11 format=3 uid="uid://dxn1yca2a1lle"]
 
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="1_pkgrs"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="2_yt08q"]
 [ext_resource type="Texture2D" uid="uid://bmokdhfyp3e3k" path="res://back.png" id="3_vt51e"]
 [ext_resource type="AudioStream" uid="uid://iw2rleqrk0v8" path="res://Jurassic Jump.mp3" id="4_ittyf"]
+[ext_resource type="PackedScene" uid="uid://b88t175f1gu8u" path="res://levelChanger.tscn" id="5_uy2ya"]
+[ext_resource type="PackedScene" uid="uid://bhvj3jxs6pxrx" path="res://cutscena1.tscn" id="6_bjo46"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jrfvb"]
 texture = ExtResource("1_pkgrs")
@@ -631,3 +633,8 @@ texture = ExtResource("3_vt51e")
 stream = ExtResource("4_ittyf")
 volume_db = -16.227
 autoplay = true
+
+[node name="Area2D" parent="." instance=ExtResource("5_uy2ya")]
+position = Vector2(760, 387)
+scale = Vector2(3.52674, 6.89968)
+newScene = ExtResource("6_bjo46")

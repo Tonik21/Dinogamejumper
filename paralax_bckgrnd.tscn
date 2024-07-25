@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ykh2ccedq31w"]
+[gd_scene load_steps=3 format=3 uid="uid://ykh2ccedq31w"]
 
 [ext_resource type="Texture2D" uid="uid://bmokdhfyp3e3k" path="res://back.png" id="1_6y15i"]
+[ext_resource type="Texture2D" uid="uid://cxd5c3ltedb50" path="res://black_ninja3086_A_large_snow_covered_icy_mountain_that_is_so_hi_559a69b9-38d4-4b9b-8510-7483a0ff2008.png" id="2_qruqi"]
 
 [node name="paralax bckgrnd" type="ParallaxBackground"]
 
@@ -10,3 +11,8 @@
 position = Vector2(571, 226)
 scale = Vector2(1.48828, 1.25663)
 texture = ExtResource("1_6y15i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(609, -1765)
+scale = Vector2(1.58594, 1.25884)
+texture = ExtResource("2_qruqi")

@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const BASE_JUMP_VELOCITY = -400.0
-const MAX_JUMP_VELOCITY = -600.0  # 2x silnější než BASE_JUMP_VELOCITY
+const SPEED = 200.0
+const BASE_JUMP_VELOCITY = -200.0
+const MAX_JUMP_VELOCITY = -400.0  # 2x silnější než BASE_JUMP_VELOCITY
 var GRAVITY = 980
 const NORMAL_FRICTION = 1.0
 const ICE_FRICTION = 0.75  # 4x menší tření

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://csdsrc8ooudkq"]
+[gd_scene load_steps=6 format=3 uid="uid://csdsrc8ooudkq"]
 
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="1_yc6dg"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_yc6q6"]
 [ext_resource type="Texture2D" uid="uid://cxd5c3ltedb50" path="res://black_ninja3086_A_large_snow_covered_icy_mountain_that_is_so_hi_559a69b9-38d4-4b9b-8510-7483a0ff2008.png" id="2_yrk5f"]
 [ext_resource type="TileSet" uid="uid://cxm834gswcynl" path="res://ice tileset.tres" id="3_u04ye"]
+[ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="5_apbag"]
 
 [node name="level 6" type="Node2D"]
 
@@ -28,3 +29,11 @@ scale = Vector2(3, 3)
 tile_set = ExtResource("3_u04ye")
 format = 2
 layer_0/tile_data = PackedInt32Array(917521, 1769474, 5, 917522, 1835010, 5, 917523, 1835010, 2, 917524, 1835010, 2, 917525, 196610, 0, 917526, 196610, 0, 917527, 196610, 0, 786458, 196610, 0, 786459, 196610, 0, 786460, 196610, 0, 786461, 196610, 0, 9, 196610, 0, 10, 196610, 0, 11, 196610, 0, 12, 196610, 0, 13, 196610, 0, 14, 196610, 0, 15, 196610, 0, 16, 196610, 0, 17, 196610, 0, 18, 196610, 0, 19, 196610, 0, 20, 196610, 0, 21, 196610, 0, 22, 196610, 0, 23, 196610, 0, 24, 196610, 0, 25, 196610, 0, 458761, 0, 0, 393225, 0, 0, 327689, 0, 0, 262153, 0, 0, 196617, 0, 0, 458767, 196610, 0, 262160, 458754, 5, 262161, 458754, 5, 262162, 458754, 5, 262158, 458754, 5, 262159, 458754, 5, 262165, 1441794, 7, 327703, 1441794, 7, 393241, 1441794, 7, 458779, 1441794, 7, 524317, 1441794, 7, 589855, 1441794, 7, 262166, 1376258, 6, 327704, 1376258, 6, 393242, 1376258, 6, 458780, 1376258, 6, 524318, 1376258, 6, 327702, 1376258, 7, 393240, 1376258, 7, 458778, 1376258, 7, 524316, 1376258, 7, 589854, 1376258, 7, 262164, 1376258, 7, 196628, 1376258, 6, 655392, 393218, 5, 655393, 393218, 5, 655394, 393218, 5, 655395, 393218, 5, 524324, 393218, 5, 393254, 393218, 5, 262177, 393218, 5, 65566, 393218, 5, 65565, 393218, 5, 589842, 393218, 5, 589843, 393218, 5, 589844, 393218, 5, 589845, 393218, 5, 589846, 393218, 5, 458766, 196610, 0, 917520, 196610, 0, 917519, 196610, 0, 917518, 196610, 0, 917517, 196610, 0, 524325, 655362, 5, 393253, 655362, 5, 262176, 655362, 5)
+
+[node name="to level 3" parent="." instance=ExtResource("5_apbag")]
+position = Vector2(621, 724)
+newScene = "level_04"
+
+[node name="to level 4" parent="." instance=ExtResource("5_apbag")]
+position = Vector2(679, -13)
+newScene = "level_07"

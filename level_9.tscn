@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3j7wvo40ikas"]
+[gd_scene load_steps=8 format=3 uid="uid://c3j7wvo40ikas"]
 
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_n7h44"]
 [ext_resource type="Texture2D" uid="uid://d0sv0e74mni38" path="res://SKIBID METEORITY.png" id="2_ftuyy"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_oxump"]
 [ext_resource type="PackedScene" uid="uid://dt831sqvwepj" path="res://asteroid.tscn" id="5_bxtuh"]
 [ext_resource type="TileSet" uid="uid://c572lxx0m7g5i" path="res://aSteroidovi_tileset .tres" id="6_rj7od"]
+[ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="7_xqibe"]
 
 [node name="Level9" type="Node2D"]
 
@@ -53,3 +54,7 @@ scale = Vector2(5, 5)
 tile_set = ExtResource("6_rj7od")
 format = 2
 layer_0/tile_data = PackedInt32Array(131080, 2228224, 19, -65527, 2228224, 17, 9, 2228224, 17, 65545, 2228224, 18, -65526, 2293760, 17, 10, 2293760, 17, 65546, 2293760, 18, 131082, 2293760, 19, -65525, 2359296, 17, 11, 2359296, 17, 65547, 2359296, 18, 131083, 2359296, 19, -65524, 2424832, 17, 12, 2424832, 17, 65548, 2424832, 18, 131084, 2424832, 19, 13, 2490368, 18, 65549, 2490368, 18, 131081, 2228224, 19, 196618, 2293760, 20, 196619, 2359296, 20, 196620, 2424832, 20, 131085, 2490368, 19)
+
+[node name="to level 3" parent="." instance=ExtResource("7_xqibe")]
+position = Vector2(659, 568)
+newScene = "level_08"

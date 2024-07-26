@@ -922,6 +922,5 @@ stream = ExtResource("4_ittyf")
 volume_db = -16.227
 autoplay = true
 
-
 [node name="to level 3" parent="." instance=ExtResource("5_lf55g")]
-position = Vector2(619, 524)
+position = Vector2(659, -10)

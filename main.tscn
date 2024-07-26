@@ -1,10 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://dr512ve358v08"]
+[gd_scene load_steps=10 format=3 uid="uid://dr512ve358v08"]
 
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_yitcv"]
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_o1jfu"]
 [ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="4_ox8kb"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="4_vcib2"]
-[ext_resource type="PackedScene" uid="uid://7ure1sxgehfd" path="res://level2.tscn" id="6_0fnqv"]
 [ext_resource type="Texture2D" uid="uid://bmokdhfyp3e3k" path="res://back.png" id="6_op643"]
 [ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="7_b81m0"]
 
@@ -664,10 +663,6 @@ layer_0/tile_data = PackedInt32Array(458754, 0, 0, 458755, 131072, 0, 458756, 13
 position = Vector2(-99, 55)
 scale = Vector2(-1.52626, 7.87549)
 
-[node name="zpátky" parent="." instance=ExtResource("6_0fnqv")]
-position = Vector2(170, 350)
-scale = Vector2(2.77196, 0.124652)
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -680,3 +675,7 @@ texture = ExtResource("6_op643")
 [node name="to level 3" parent="." instance=ExtResource("7_b81m0")]
 position = Vector2(231, -386)
 newScene = "level_3"
+
+[node name="to level 4" parent="." instance=ExtResource("7_b81m0")]
+position = Vector2(204, 343)
+newScene = "prvni_bajom_a_frame"

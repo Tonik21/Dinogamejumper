@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ubcte6mtovrf"]
+[gd_scene load_steps=10 format=3 uid="uid://ubcte6mtovrf"]
 
 [ext_resource type="Texture2D" uid="uid://bmokdhfyp3e3k" path="res://back.png" id="1_26eol"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="2_o7key"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="3_j74p8"]
 [ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="3_qh74p"]
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="5_63x8k"]
+[ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="6_0v2q1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5vis7"]
 texture = ExtResource("2_o7key")
@@ -676,3 +677,10 @@ scale = Vector2(-1.23496, 3.33533)
 [node name="liána4" parent="." instance=ExtResource("5_63x8k")]
 position = Vector2(270, 86)
 scale = Vector2(1, 3.68)
+
+[node name="to level 3" parent="." instance=ExtResource("6_0v2q1")]
+position = Vector2(634, 772)
+
+[node name="to level 4" parent="." instance=ExtResource("6_0v2q1")]
+position = Vector2(639, -10)
+newScene = "actually_level_4"

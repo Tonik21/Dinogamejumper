@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dv8ux6jmreevy"]
+[gd_scene load_steps=5 format=3 uid="uid://dv8ux6jmreevy"]
 
 [ext_resource type="Texture2D" uid="uid://cxd5c3ltedb50" path="res://black_ninja3086_A_large_snow_covered_icy_mountain_that_is_so_hi_559a69b9-38d4-4b9b-8510-7483a0ff2008.png" id="1_8iapo"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_klkjc"]
 [ext_resource type="TileSet" uid="uid://cxm834gswcynl" path="res://ice tileset.tres" id="1_pcokc"]
+[ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="4_0n36e"]
 
 [node name="LEVEL_05" type="Node2D"]
 
@@ -24,3 +25,11 @@ position = Vector2(142, -13)
 position = Vector2(500, 367)
 scale = Vector2(1.66016, 1.27936)
 texture = ExtResource("1_8iapo")
+
+[node name="to level 3" parent="." instance=ExtResource("4_0n36e")]
+position = Vector2(634, 734)
+newScene = "actually_level_4"
+
+[node name="to level 4" parent="." instance=ExtResource("4_0n36e")]
+position = Vector2(645, -7)
+newScene = "level_6"

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://fnvonxnmq2ey"]
+[gd_scene load_steps=6 format=3 uid="uid://fnvonxnmq2ey"]
 
 [ext_resource type="TileSet" uid="uid://57kfxgki3wxc" path="res://VSEHOtiLESTE.tres" id="1_a2vpg"]
 [ext_resource type="Texture2D" uid="uid://d0sv0e74mni38" path="res://SKIBID METEORITY.png" id="2_p8ox7"]
 [ext_resource type="PackedScene" uid="uid://dt831sqvwepj" path="res://asteroid.tscn" id="3_mu7w7"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="4_6gy2x"]
+[ext_resource type="PackedScene" uid="uid://bbjbhwv3ijnbw" path="res://to_level_3.tscn" id="5_5vkey"]
 
 [node name="level-08" type="Node2D"]
 
@@ -26,3 +27,10 @@ position = Vector2(337, -903)
 
 [node name="hrac" parent="." instance=ExtResource("4_6gy2x")]
 position = Vector2(514, 580)
+
+[node name="to level 3" parent="." instance=ExtResource("5_5vkey")]
+position = Vector2(650, 728)
+newScene = "level_09"
+
+[node name="to level 4" parent="." instance=ExtResource("5_5vkey")]
+position = Vector2(629, 0)

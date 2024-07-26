@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv8ux6jmreevy"]
+
+[ext_resource type="Texture2D" uid="uid://cxd5c3ltedb50" path="res://black_ninja3086_A_large_snow_covered_icy_mountain_that_is_so_hi_559a69b9-38d4-4b9b-8510-7483a0ff2008.png" id="1_8iapo"]
+[ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_klkjc"]
+[ext_resource type="TileSet" uid="uid://cxm834gswcynl" path="res://ice tileset.tres" id="1_pcokc"]
+
+[node name="LEVEL_05" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(3, 3)
+tile_set = ExtResource("1_pcokc")
+format = 2
+layer_0/tile_data = PackedInt32Array(524316, 1245186, 7, 524315, 1179650, 7, 458780, 1245186, 6, 524314, 1245186, 6, 589848, 1245186, 6, 655382, 1245186, 6, 720916, 1245186, 6, 589849, 1179650, 7, 655383, 1179650, 7, 720917, 1179650, 7, 720918, 1245186, 7, 786452, 1245186, 7, 786451, 1179650, 7, 655384, 1245186, 7, 589850, 1245186, 7, 327705, 196610, 6, 393246, 1245186, 6, 327712, 1245186, 6, 262178, 1245186, 6, 196644, 1245186, 6, 131110, 1245186, 6, 458781, 1179650, 7, 393247, 1179650, 7, 327713, 1179650, 7, 262179, 1179650, 7, 196645, 1179650, 7, 458782, 1245186, 7, 393248, 1245186, 7, 327714, 1245186, 7, 262180, 1245186, 7, 196646, 1245186, 7, 131096, 262146, 5, 131097, 262146, 5, 65565, 196610, 6, 262173, 196610, 6, 851985, 1835010, 3, 851984, 1835010, 3, 851983, 1835010, 3, 851986, 1835010, 3, 851987, 1835010, 3, 851982, 1835010, 3, 655374, 786434, 3, 655375, 786434, 3, 458772, 786434, 3, 458773, 786434, 3)
+
+[node name="hrac" parent="." instance=ExtResource("1_klkjc")]
+position = Vector2(528, 492)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(142, -13)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(506, -275)
+scale = Vector2(1.66016, 1.27936)
+texture = ExtResource("1_8iapo")

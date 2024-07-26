@@ -5,7 +5,7 @@ const BASE_JUMP_VELOCITY = -200.0
 const MAX_JUMP_VELOCITY = -400.0  # 2x silnější než BASE_JUMP_VELOCITY
 var GRAVITY = 980
 const NORMAL_FRICTION = 1.0
-const ICE_FRICTION = 0.75  # 4x menší tření
+const ICE_FRICTION = 0.55  # 4x menší tření
 var isClimbing = false
 
 var time_left = 60  # 60 sekund na dosažení cíle

@@ -599,6 +599,9 @@ sources/1 = SubResource("TileSetAtlasSource_u73iy")
 [node name="treti frame" type="Node2D"]
 script = ExtResource("1_7o76h")
 
+[node name="hrac" parent="." instance=ExtResource("5_jej3e")]
+position = Vector2(634, 612)
+
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_ko00u")
@@ -613,6 +616,3 @@ layer_0/tile_data = PackedInt32Array(2555943, 131072, 0, 2555944, 131072, 0, 131
 position = Vector2(548, 980)
 scale = Vector2(1.40267, 1.24479)
 texture = ExtResource("4_plge6")
-
-[node name="hrac" parent="." instance=ExtResource("5_jej3e")]
-position = Vector2(634, 612)

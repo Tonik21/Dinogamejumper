@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var knockback_force = 800
+var knockback_force = 8000
 
 var originalPositon = Vector2.ZERO
 

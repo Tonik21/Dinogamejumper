@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://cigsjnprumf6t"]
+
+[ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_ncjrf"]
+[ext_resource type="TileSet" uid="uid://cxm834gswcynl" path="res://ice tileset.tres" id="2_kjpjr"]
+[ext_resource type="Script" path="res://Control.gd" id="3_jcaxe"]
+[ext_resource type="Texture2D" uid="uid://cgttssq4yjdt7" path="res://KRAUN.png.jpg" id="4_2imrf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(3, 0)
+offset_left = 48.0
+offset_top = 12.0
+offset_right = 1401.0
+offset_bottom = 75.0
+scale = Vector2(0.75, 0.75)
+text = "YOU ATE THE METEORITE AND WON GOOD JOB YOU SAVED THE DINOKIND, BUT THE AFTER EFFECTS OF EATING THE METEORITE YOU SACRIFICED YOURSELF. So... you're dead :("
+placeholder_text = "yay
+"
+
+[node name="hrac" parent="." instance=ExtResource("1_ncjrf")]
+position = Vector2(322, 173)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_kjpjr")
+format = 2
+layer_0/tile_data = PackedInt32Array(851998, 3604483, 20, 917534, 3604483, 21, 983070, 3604483, 22, 851999, 3670019, 20, 917535, 3670019, 21, 983071, 3670019, 22, 852000, 3735555, 20, 917536, 3735555, 21, 983072, 3735555, 22, 1048608, 3735555, 23, 852001, 3801091, 20, 917537, 3801091, 21, 983073, 3801091, 22, 1048609, 3801091, 23, 852002, 3866627, 20, 917538, 3866627, 21, 983074, 3866627, 22, 1048610, 3866627, 23, 852003, 3932163, 20, 917539, 3932163, 21, 983075, 3932163, 22, 917540, 3997699, 21, 983076, 3997699, 22)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_jcaxe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(837, 320)
+scale = Vector2(0.47398, 0.531123)
+texture = ExtResource("4_2imrf")

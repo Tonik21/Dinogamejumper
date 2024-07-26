@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxn1yca2a1lle"]
+[gd_scene load_steps=10 format=3 uid="uid://dxn1yca2a1lle"]
 
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="1_pkgrs"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="2_yt08q"]
 [ext_resource type="Texture2D" uid="uid://bmokdhfyp3e3k" path="res://back.png" id="3_vt51e"]
 [ext_resource type="AudioStream" uid="uid://iw2rleqrk0v8" path="res://Jurassic Jump.mp3" id="4_ittyf"]
 [ext_resource type="PackedScene" uid="uid://b88t175f1gu8u" path="res://levelChanger.tscn" id="5_uy2ya"]
-[ext_resource type="PackedScene" uid="uid://bhvj3jxs6pxrx" path="res://cutscena1.tscn" id="6_bjo46"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jrfvb"]
 texture = ExtResource("1_pkgrs")
@@ -606,7 +605,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(1310720, 0, 0, 1310721, 131072, 0, 1310722, 131072, 0, 1310723, 131072, 0, 1310724, 131072, 0, 1310725, 131072, 0, 1310726, 131072, 0, 1310727, 131072, 0, 1310728, 131072, 0, 1310729, 131072, 0, 1310730, 131072, 0, 1310731, 131072, 0, 1310732, 131072, 0, 1376256, 0, 1, 1441800, 131072, 5, 1441801, 131072, 5, 1441802, 131072, 5, 1376268, 458752, 4, 1441792, 393216, 5, 1441804, 458752, 5, 1441793, 131072, 5, 1441794, 131072, 5, 1441795, 131072, 5, 1441796, 131072, 5, 1441803, 131072, 5, 1441797, 65536, 7, 1441798, 65536, 7, 1441799, 65536, 7, 1376257, 131072, 3, 1376258, 131072, 3, 1376259, 131072, 3, 1376260, 131072, 3, 1376261, 131072, 3, 1376262, 131072, 3, 1376263, 131072, 3, 1376264, 131072, 3, 1376265, 131072, 3, 1376266, 131072, 3, 1376267, 131072, 3, 1310733, 131072, 0, 1310734, 131072, 0, 1310735, 131072, 0, 1310736, 131072, 0, 1310737, 131072, 0, 1310738, 131072, 0, 1310739, 131072, 0, 1310740, 131072, 0, 1310741, 131072, 0, 1310742, 131072, 0, 1310743, 131072, 0, 1310744, 131072, 0, 1310745, 131072, 0, 1310746, 131072, 0, 1310747, 131072, 0, 1310748, 131072, 0, 1310749, 131072, 0, 1310750, 131072, 0, 1310752, 131072, 0, 1310753, 131072, 0, 1310751, 131072, 0, 1310754, 131072, 0, 1310755, 131072, 0, 1310756, 131072, 0, 1114129, 0, 0, 1114130, 65536, 0, 1114131, 327680, 0, 917526, 0, 0, 917527, 65536, 0, 917528, 327680, 0, 720909, 0, 0, 720910, 65536, 0, 720911, 327680, 0, 393235, 65536, 0, 196616, 0, 0, 196617, 65536, 0, 196618, 327680, 0, 131091, 65536, 0, 131087, 65536, 0, 1179666, 131072, 7, 983063, 131072, 7, 786446, 196608, 5, 458771, 196608, 5, 196623, 196608, 5, 196627, 196608, 5, 262152, 0, 5, 262153, 196608, 5, 262154, 327680, 5)
 
 [node name="hrac" parent="." instance=ExtResource("2_yt08q")]
-position = Vector2(630, 184)
+position = Vector2(200, 600)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -634,7 +633,6 @@ stream = ExtResource("4_ittyf")
 volume_db = -16.227
 autoplay = true
 
-[node name="Area2D" parent="." instance=ExtResource("5_uy2ya")]
-position = Vector2(760, 387)
-scale = Vector2(3.52674, 6.89968)
-newScene = ExtResource("6_bjo46")
+[node name="Area2D2" parent="." instance=ExtResource("5_uy2ya")]
+position = Vector2(631, 1.00006)
+scale = Vector2(67.4424, -0.448149)

@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var newScene = preload("res://asteroid.tscn")
+@export var newScene = preload("res://cutlevel2.tscn")
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):

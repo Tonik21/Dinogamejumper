@@ -4,7 +4,7 @@ var knockback_force = 800
 
 var originalPositon = Vector2.ZERO
 
-func _ready():
+func _ready(): 
 	$AnimationPlayer.play("fly")
 	randomize()
 	originalPositon = position

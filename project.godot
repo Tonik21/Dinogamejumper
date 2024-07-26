@@ -11,10 +11,9 @@ config_version=5
 [application]
 
 config/name="BEetatesteringentoret"
-run/main_scene="res://prvni_bajom_a_frame.tscn"
+run/main_scene="res://homescreen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/show_image=false
-config/icon="res://icon.svg"
 
 [display]
 

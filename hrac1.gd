@@ -87,10 +87,10 @@ func _physics_process(delta):
 	move_and_slide()
 
 	# Aktualizace zbývajícího času
-	time_left -= delta
-	if time_left <= 0:
+	# time_left -= delta
+	# if time_left <= 0:
 		#game_over()
-		get_tree().quit()
+		# get_tree().quit()
 
 func start_charge_jump():
 	is_charging_jump = true

@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dr512ve358v08"]
+[gd_scene load_steps=10 format=3 uid="uid://dr512ve358v08"]
 
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="1_yitcv"]
 [ext_resource type="PackedScene" uid="uid://c6mm0mxlkbg2x" path="res://liána.tscn" id="4_o1jfu"]
 [ext_resource type="Texture2D" uid="uid://dahdu68xnhtt3" path="res://liána.png" id="4_ox8kb"]
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="4_vcib2"]
 [ext_resource type="PackedScene" uid="uid://ykh2ccedq31w" path="res://paralax_bckgrnd.tscn" id="5_7x3pq"]
+[ext_resource type="PackedScene" uid="uid://7ure1sxgehfd" path="res://level2.tscn" id="6_0fnqv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8df8t"]
 texture = ExtResource("4_vcib2")
@@ -601,7 +602,7 @@ sources/1 = SubResource("TileSetAtlasSource_efvls")
 position = Vector2(441, 381)
 
 [node name="hrac" parent="." instance=ExtResource("1_yitcv")]
-position = Vector2(162, 203)
+position = Vector2(163, 195)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(13, 6)
@@ -615,3 +616,7 @@ position = Vector2(-99, 55)
 scale = Vector2(-1.52626, 7.87549)
 
 [node name="paralax bckgrnd" parent="." instance=ExtResource("5_7x3pq")]
+
+[node name="zpátky" parent="." instance=ExtResource("6_0fnqv")]
+position = Vector2(170, 350)
+scale = Vector2(2.77196, 0.124652)

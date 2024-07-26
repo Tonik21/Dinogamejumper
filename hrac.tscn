@@ -18,7 +18,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 4.0
+"speed": 7.0
 }]
 
 [node name="hrac" type="CharacterBody2D" groups=["player"]]
@@ -33,10 +33,14 @@ position = Vector2(9.5, -13)
 scale = Vector2(0.119926, 0.158038)
 sprite_frames = SubResource("SpriteFrames_xmpgg")
 animation = &"run"
-frame_progress = 0.161159
+frame = 1
+frame_progress = 0.795881
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
-offset_right = 157.0
-offset_bottom = 27.0
+offset_top = 720.0
+offset_right = 719.0
+offset_bottom = 747.0
+rotation = -1.56963
+show_percentage = false

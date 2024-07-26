@@ -1,32 +1,29 @@
 extends RigidBody2D
 
-var fall_speed
-var player_knockback_force
-var screen_size
+var knockback_force = 800
 
-func _ready():
-	fall_speed = 200
-	player_knockback_force = 100000000
-	screen_size = get_viewport_rect().size
+var originalPositon = Vector2.ZERO
 
- # Začíná nad obrazovkou
+func _ready(): 
+	$AnimationPlayer.play("fly")
+	randomize()
+	originalPositon = position
 
 func _physics_process(delta):
-	# Pohyb dolů
-	position.y += fall_speed * delta
 	
-	# Pokud meteorit opustí obrazovku, resetujeme jeho pozici
+	var collision = move_and_collide(Vector2.ZERO)
+	
+	if collision:
+		var collider = collision.get_collider()
+		if collider.is_in_group("player"):
+			var direction = Vector2(randf_range(-1,1), randf_range(-1,1)).normalized()
+			print(direction)
+			collider.knockback(direction * knockback_force)
+			#queue_free()
+		position = originalPositon
+		linear_velocity = Vector2.ZERO
 
-
-func _on_Meteor_body_entered(body):
-	if body.is_in_group("player"):
-		# Vypočítáme směr odhození
-		var direction = (body.global_position - global_position).normalized()
-		
-		# Aplikujeme sílu na hráče
-		body.apply_central_impulse(direction * player_knockback_force)
-		
-		# Resetujeme pozici meteoritu
+	
 
 
 

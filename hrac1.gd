@@ -22,6 +22,10 @@ func is_on_floor_custom():
 func set_ice_friction():
 	current_friction = ICE_FRICTION
 	
+func knockback(force):
+	velocity = force
+	move_and_slide()
+	
 func check_icy_tile():
 	if is_on_floor_custom():
 		var tile_pos = tilemap.local_to_map(global_position/3)
@@ -48,7 +52,7 @@ func _physics_process(delta):
 	check_icy_tile()
 
 	# Aplikace tření
-	print(current_friction)
+	#print(current_friction)
 	velocity.x *= 1/current_friction
 
 	move_and_slide()
@@ -83,10 +87,10 @@ func _physics_process(delta):
 	move_and_slide()
 
 	# Aktualizace zbývajícího času
-	time_left -= delta
-	if time_left <= 0:
+	# time_left -= delta
+	# if time_left <= 0:
 		#game_over()
-		get_tree().quit()
+		# get_tree().quit()
 
 func start_charge_jump():
 	is_charging_jump = true
@@ -97,6 +101,7 @@ func continue_charge_jump(delta):
 	charge_time = min(charge_time, MAX_CHARGE_TIME)
 
 func execute_jump():
+	$CanvasLayer/ProgressBar.value = 0
 	var jump_power = lerp(BASE_JUMP_VELOCITY, MAX_JUMP_VELOCITY, charge_time / MAX_CHARGE_TIME)
 	velocity.y = jump_power
 	is_charging_jump = false

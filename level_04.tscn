@@ -21,6 +21,6 @@ position = Vector2(528, 492)
 position = Vector2(142, -13)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(506, -275)
+position = Vector2(500, 367)
 scale = Vector2(1.66016, 1.27936)
 texture = ExtResource("1_8iapo")

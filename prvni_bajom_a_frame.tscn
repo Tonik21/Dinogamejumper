@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dxn1yca2a1lle"]
+[gd_scene load_steps=8 format=3 uid="uid://dxn1yca2a1lle"]
 
 [ext_resource type="Texture2D" uid="uid://l4kilteae8ep" path="res://tilesetgrass.png" id="1_pkgrs"]
 [ext_resource type="PackedScene" uid="uid://dibtajhoc20a0" path="res://hrac.tscn" id="2_yt08q"]
@@ -878,12 +878,6 @@ physics_layer_0/collision_layer = 1
 physics_layer_1/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jrfvb")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6pmn"]
-size = Vector2(76, 705.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pll8m"]
-size = Vector2(35, 693)
-
 [node name="prvni bajom a frame" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -895,18 +889,6 @@ layer_0/tile_data = PackedInt32Array(1310720, 0, 0, 1310721, 131072, 0, 1310722,
 
 [node name="hrac" parent="." instance=ExtResource("2_yt08q")]
 position = Vector2(200, 600)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1243, 356.75)
-shape = SubResource("RectangleShape2D_t6pmn")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-24, 348.5)
-shape = SubResource("RectangleShape2D_pll8m")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -922,6 +904,11 @@ stream = ExtResource("4_ittyf")
 volume_db = -16.227
 autoplay = true
 
+<<<<<<< HEAD
 [node name="Area2D2" parent="." instance=ExtResource("5_uy2ya")]
 position = Vector2(631, 1.00006)
 scale = Vector2(67.4424, -0.448149)
+=======
+[node name="leveldown" parent="." instance=ExtResource("5_ohmn1")]
+position = Vector2(637, -41)
+>>>>>>> c504c1536af69abc1f3a40cb355373cec5aa1ac3
